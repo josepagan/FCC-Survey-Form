@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>FCC Form</title>
+  <meta name="description" content="form">
+  <meta name="author" content="Jose Pagan">
+
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+  <div id="formy">
+
+    <form id="survey-form">
+      <div id="form-header">
+        <h1 id="title">HTML PIZZAS</h1>
+        <p id="description">Use this form to design and order your pizza</p>
+      </div>
+      <div id="first-block">
+        <div>
+          <label for="name" id="name-label">Name:</label>
+          <input type="name" id="name" name="fullname" required placeholder="enter your full name here">
+        </div>
+        <div>
+          <label for="email" id="email-label">e-mail:</label>
+          <input type="email" id="email" name="email" required placeholder="your email">
+        </div>
+        <div>
+          <label for="number" id="number-label">Age</label>
+          <input type="number" id="number" name="age" required min="18" max="120" placeholder="18-120">
+        </div>
+        <div>
+          <label for="dropdown">Select your pizza size</label>
+          <select id="dropdown">
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="big">Big</option>
+      <option value="huge">Huge</option>
+      <option value="none" selected>Please select a size</option>
+    </select>
+        </div>
+      </div>
+      <div class="form-parts">
+        <fieldset>
+          <legend>Select your pizza base:</legend>
+          <input type="radio" name="pizza-select" value="normal" required>
+
+          <label for="normal">Normal</label>
+          <input type="radio" name="pizza-select" value="thick">
+
+          <label for="thick">Thick</label>
+          <input type="radio" name="pizza-select" value="thin">
+
+          <label for="thin">Thin</label>
+          <input type="radio" name="pizza-select" value="gluten-free">
+
+          <label for="gluten-free">Gluten free</label>
+
+        </fieldset>
+      </div>
+      <div class="form-parts">
+        <fieldset>
+          <legend>Select your toppings</legend>
+          <input type="checkbox" name="tick-checkbox" value="onion">
+          <label for="no">Onion</label>
+          <input type="checkbox" name="tick-checkbox" value="pepper">
+          <label for="no">Pepper</label>
+          <input type="checkbox" name="tick-checkbox" value="mushrooms">
+          <label for="no">Mushrooms</label>
+          <input type="checkbox" name="tick-checkbox" value="goat-cheese">
+          <label for="no">Goat Cheese</label>
+          <input type="checkbox" name="tick-checkbox" value="ham">
+          <label for="no">Ham</label>
+          <input type="checkbox" name="tick-checkbox" value="tuna">
+          <label for="no">Tuna</label>
+          <input type="checkbox" name="tick-checkbox" value="falafel">
+          <label for="no">Falafel</label>
+
+
+        </fieldset>
+      </div>
+      <div id="textarea-block">
+        <label for="textarea">If you want anything special ask us here:</label>
+        <textarea id="textarea" name="textarea" cols="3">I would like...
+        </textarea>
+        <button type="submit" id="submit">Send</button>
+      </div>
+
+
+
+    </form>
+  </div>
+  
+  <!-- script to test the form on freecodecamp -->
+  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+
+</body>
+
+</html>
